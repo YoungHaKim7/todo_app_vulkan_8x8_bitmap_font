@@ -1,0 +1,10 @@
+[package]
+name = "todo_app_vulkan"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.98.0"
+
+[dependencies]
+vulkano = { git = "https://github.com/vulkano-rs/vulkano", rev="fb4cfdb" }
+vulkano-shaders = { git = "https://github.com/vulkano-rs/vulkano", rev="fb4cfdb"}
+winit = "0.30.13"
