@@ -107,3 +107,16 @@ pub fn cell_index(c: u8) -> Option<u32> {
     let i = c.checked_sub(32)?;
     (i < 95).then_some(u32::from(i) + 1)
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn font_covers_printable_ascii() {
+        assert_eq!(cell_index(b' '), Some(1));
+        assert_eq!(cell_index(b'~'), Some(95));
+        assert_eq!(cell_index(b'\n'), None);
+        assert!(FONT_8X8[b'!' as usize - 32].iter().any(|b| *b != 0));
+    }
+}
