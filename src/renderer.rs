@@ -59,12 +59,12 @@ use winit::{
     window::{CursorIcon, Window},
 };
 
-use crate::atlas::{ATLAS_H, ATLAS_W, build_atlas};
-use crate::shaders::{ui_fs, ui_vs};
-use crate::ui::UiVertex;
-use crate::ui::screen::draw_ui;
-use crate::ui::theme::COL_BG;
-use crate::{app::App, ui::Ui};
+use crate::{
+    app::App,
+    atlas::{ATLAS_H, ATLAS_W, build_atlas},
+    shaders::{ui_fs, ui_vs},
+    ui::{Ui, UiVertex, screen::draw_ui, theme::COL_BG},
+};
 
 const MAX_VERTICES: usize = 1 << 16;
 

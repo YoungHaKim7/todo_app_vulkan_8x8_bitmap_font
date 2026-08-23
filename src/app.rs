@@ -10,8 +10,10 @@ use winit::{
     window::WindowId,
 };
 
-use crate::renderer::{GpuContext, RenderContext};
-use crate::todos::{Todos, sanitize};
+use crate::{
+    renderer::{GpuContext, RenderContext},
+    todos::{Todos, sanitize},
+};
 
 const SAVE_FILE: &str = "todos.txt";
 

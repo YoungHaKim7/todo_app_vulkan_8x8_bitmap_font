@@ -6,10 +6,13 @@ use super::{
     GLYPH_ADV, Rect, SCALE_TEXT, SCALE_TITLE, Ui, fit_width, text_width,
     widgets::{button, caret_blinking, checkbox, delete_button},
 };
-use crate::todos::Todos;
-use crate::ui::theme::{
-    BTN_GHOST, BTN_PRIMARY, COL_ACCENT, COL_ACCENT_HOVER, COL_BORDER, COL_FIELD, COL_PLACEHOLDER,
-    COL_ROW_ALT, COL_TEXT, COL_TEXT_DIM,
+
+use crate::{
+    todos::Todos,
+    ui::theme::{
+        BTN_GHOST, BTN_PRIMARY, COL_ACCENT, COL_ACCENT_HOVER, COL_BORDER, COL_FIELD,
+        COL_PLACEHOLDER, COL_ROW_ALT, COL_TEXT, COL_TEXT_DIM,
+    },
 };
 
 pub(crate) fn draw_ui(todos: &mut Todos, save_path: &Path, ui: &mut Ui, w: f32, h: f32) {
