@@ -7,4 +7,5 @@
   <a href="https://www.vulkan.org/" rel="nofollow noopener noreferrer">
     <img src="https://img.shields.io/badge/Vulkan-1.4-red.svg" alt="Vulkan">
   </a>
-full Vulkan renderer + immediate-mode GUI + ToDo logic
+
+ - full Vulkan renderer + immediate-mode GUI + ToDo logic
